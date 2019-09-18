@@ -9,21 +9,55 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="contact-form.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sofia&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
-
-
-      <div class="container">
-          <form action="https://formspree.io/molly.annette.madden@gmail.com" method="POST">
-              <form id="contact" action="" method="post">
-                  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                  <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                  <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-              </form>
+      <div class="grid-container">
+        <div class="name">
+          <img src="./name-badge.png">
         </div>
-    
-    <script src="" async defer></script>
+
+        <div class="nav">
+            <a href="./index.html">HOME</a>
+            <a href="./About.html">ABOUT</a>
+            <a href="./portfolio.html">PORTFOLIO</a>
+            <a href="./blog.html">BLOG</a>
+            <a href="./resume.html">RESUME</a>
+            
+        </div>
+
+
+        <form>      
+          <form action="https://formspree.io/molly.annette.madden@gmail.com" method="POST">
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <input type="submit" value="SUBMIT"/>
+        </form>
+
+        <section>
+          <div class="info">
+            <div class="socials">
+              <ul>
+                <li><i class="fas fa-envelope-open-text" style="color:#ff3f7f;"></i>molly.annette.madden@gmail.com</li>
+                <li><i class="fas fa-phone-square-alt" style="color:#ff755f;"></i>0478 933 XXX</li>
+                <li><i class="fab fa-linkedin" style="color:#ffd150;"></i>linkedin.com/in/momadd</li>
+                <li><i class="fab fa-instagram" style="color:#80a961;"></i>instagram.com/molly_madden</li>
+                <li><i class="fab fa-github-square" style="color:#0088f6;"></i>github.com/mollymadden</li>
+                <li><i class="fab fa-twitter-square" style="color:#b353e8;"></i>twitter.com/maddmole</li>
+              </ul>
+          </div>
+          </div>
+        </section>
+
+
+
+
+
+      </div>
   </body>
 </html>
