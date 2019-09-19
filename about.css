@@ -213,15 +213,21 @@ color:#9435C9;
 }
 
 @media only screen and (max-width: 800px) {
+  
   .mobilenav {
-      display: block;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background: white;
-    }
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    white-space: nowrap;
+  }
+
+  i {
+    font-size: 150%;
+  }
 
     .name img {
       max-width: 40%;

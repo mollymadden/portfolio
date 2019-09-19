@@ -184,14 +184,19 @@ color:#9435C9;
 
 
   .mobilenav {
-      display: block;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background: white;
-    }
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    white-space: nowrap;
+  }
+
+  i {
+    font-size: 150%;
+  }
 
     .name img {
       max-width: 40%;

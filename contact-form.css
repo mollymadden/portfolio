@@ -222,13 +222,18 @@ mycolours {
 
 
   .mobilenav {
-    display: block;
+    display: inline-block;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     background: white;
+    white-space: nowrap;
+  }
+
+  i {
+    font-size: 150%;
   }
 
   .name img {
@@ -252,10 +257,6 @@ mycolours {
   ul {
     list-style-type: none;
     padding: 0px;
-  }
-
-  i {
-    font-size: 200%;
   }
 
 
