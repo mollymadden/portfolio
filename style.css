@@ -1,6 +1,6 @@
 body {
   margin: 0px auto;
-  background: #0079ff;
+  font-size: 100%;
 }
 
 .grid-container {
@@ -19,8 +19,8 @@ body {
 }
 
 .name img {
-    max-width: 30%;
-    height: auto;
+  max-width: 30%;
+  height: auto;
 }
 
 .nav {
@@ -37,7 +37,7 @@ a {
   margin: 3%;
   font-family: 'Roboto', sans-serif;
   color: silver;
-  font-size: 13px;
+  font-size: 150%;
   text-decoration: none;
   transition: transform 1s ease-out;
 }
@@ -118,7 +118,7 @@ section {
   background-color: #FFF5FF;
   font-family: 'Playfair Display', serif;
   color: black;
-  font-size: 120%;
+  font-size: 100%;
   text-align: center;
   transform: rotateY(180deg);
   display: flex;
@@ -139,7 +139,7 @@ footer {
 
 i {
   padding: 1%;
-  font-size: 25px;
+  font-size: 300%;
   margin: 2%;
   
 }
@@ -177,3 +177,46 @@ color:#0079ff;
 color:#b353e8;
 color:#9435C9;
 }
+
+.mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .mobilenav {
+      display: block;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .name img {
+      max-width: 30%;
+      height: auto;
+      margin-bottom: 10%; 
+  }
+
+    .nav { 
+      display: none;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: none;
+    }
+
+    .flip-card-back {
+      transform: none;
+      font-size: 150%;
+    }
+
+    .flip-card-front {
+      display: none;
+      transform: none;
+    }
+
+    footer {
+      display: none;
+    }
+  }

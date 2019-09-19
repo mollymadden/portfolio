@@ -1,5 +1,6 @@
 body {
   margin: 0px auto;
+  
 }
 
 .grid-container {
@@ -75,9 +76,15 @@ a:nth-child(5):hover {
   align-items: flex-end;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  color: grey;
+  color: silver;
   font-size: 80%;
-  margin-right: 15%;
+  text-align: right;
+  margin-right: 4%;
+  font-family: 'Playfair Display', serif;
+}
+
+.sides p {
+  font-size: 130%;
 }
 
 
@@ -93,8 +100,7 @@ section {
 
 
 .myBox {
-  padding: 20px;
-  width: 70%;
+  width: 90%;
   height: 70%;
   overflow: scroll;
   border-left: 25px solid transparent;

@@ -106,7 +106,7 @@ a:nth-child(5):hover {
   border-radius: 100%;
   content: '';
   background-image: linear-gradient(to bottom, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-  padding: 10px;
+  padding: 8px;
   position:absolute;
   z-index:-1;
 }
@@ -208,3 +208,27 @@ color:#0079ff;
 color:#b353e8;
 color:#9435C9;
 }
+
+.mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .mobilenav {
+      display: block;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: ff00a6;
+      text-align: center;
+    }
+
+    .nav { 
+      display: none;
+    }
+
+    footer {
+      display: none;
+    }
+  }
