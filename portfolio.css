@@ -1,6 +1,7 @@
 body {
   margin: 0px auto;
   font-size: 100%;
+  overflow-y: scroll;
 }
 
 .grid-container {
@@ -39,50 +40,49 @@ a {
   color: silver;
   font-size: 100%;
   text-decoration: none;
-  transition: transform 1s ease-out;
 }
 
-a:nth-child(1):hover {
-  color: #ff00a6;
-  transform: scale(1.1);
+.topnav:nth-child(1):hover {
+  border-top: 2px solid #ff00a6;
+  border-bottom: 2px solid #ff00a6;
+  padding: 6px 0; 
 }
 
-a:nth-child(2):hover {
-  color: #ff755f;
-  transform: scale(1.1);
+.topnav:nth-child(2):hover {
+  border-top: 2px solid #ffd150;
+  border-bottom: 2px solid #ffd150;
+  padding: 6px 0; 
 }
 
-a:nth-child(3):hover {
-  color: #ffd150;
-  transform: scale(1.1);
+.topnav:nth-child(3):hover {
+  border-top: 2px solid #80a961;
+  border-bottom: 2px solid #80a961;
+  padding: 6px 0; 
 }
 
-a:nth-child(4):hover {
-  color: #008172;
-  transform: scale(1.1);
+.topnav:nth-child(4):hover {
+  border-top: 2px solid #0088f6;
+  border-bottom: 2px solid #0088f6;
+  padding: 6px 0; 
 }
 
-a:nth-child(5):hover {
-  color: #0088f6;
-  transform: scale(1.1);
+.topnav:nth-child(5):hover {
+  border-top: 2px solid #b353e8;
+  border-bottom: 2px solid #b353e8;
+  padding: 6px 0; 
 }
 
 
 section {
   grid-column: 1/4;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;  
-} 
-
-section .cards {
-  height: 300px;
-  width: 300px;
-  border: 2px solid black;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
-  margin-top: 1%;
 }
+
+
+
+
 
 
 footer {
@@ -134,13 +134,15 @@ color:#b353e8;
 color:#9435C9;
 }
 
-
 .mobilenav {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+.mobilepic {
+  display: none;
+}
 
+@media only screen and (max-width: 800px) {
   .grid-container {
     display: flex;
     justify-content: center;
@@ -169,6 +171,24 @@ color:#9435C9;
       display: none;
     }
 
+    .mobilepic {
+      display: flex;
+      font-family: 'Playfair Display', serif;
+      color: black;
+      font-size: 120%;
+      flex-direction: column;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .mobilepic img {
+      height: auto;
+      width: 100%;
+    }
+
+    .flip-card {
+      display: none;
+    }
 
     footer {
       display: none;
