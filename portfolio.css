@@ -140,6 +140,15 @@ color:#9435C9;
 }
 
 @media only screen and (max-width: 800px) {
+
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
   .mobilenav {
       display: block;
       position: fixed;
