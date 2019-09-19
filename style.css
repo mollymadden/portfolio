@@ -181,7 +181,19 @@ color:#9435C9;
   display: none;
 }
 
+.mobilepic {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
   .mobilenav {
       display: block;
       position: fixed;
@@ -189,6 +201,7 @@ color:#9435C9;
       bottom: 0;
       width: 100%;
       text-align: center;
+      background: white;
     }
 
     .name img {
@@ -201,18 +214,23 @@ color:#9435C9;
       display: none;
     }
 
-    .flip-card:hover .flip-card-inner {
-      transform: none;
+    .mobilepic {
+      display: flex;
+      font-family: 'Playfair Display', serif;
+      color: black;
+      font-size: 120%;
+      flex-direction: column;
+      max-width: 800px;
+      text-align: center;
     }
 
-    .flip-card-back {
-      transform: none;
-      font-size: 150%;
+    .mobilepic img {
+      height: auto;
+      width: 100%;
     }
 
-    .flip-card-front {
+    .flip-card {
       display: none;
-      transform: none;
     }
 
     footer {
