@@ -171,24 +171,7 @@ color:#9435C9;
       display: none;
     }
 
-    .mobilepic {
-      display: flex;
-      font-family: 'Playfair Display', serif;
-      color: black;
-      font-size: 120%;
-      flex-direction: column;
-      max-width: 800px;
-      text-align: center;
-    }
 
-    .mobilepic img {
-      height: auto;
-      width: 100%;
-    }
-
-    .flip-card {
-      display: none;
-    }
 
     footer {
       display: none;

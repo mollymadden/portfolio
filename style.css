@@ -1,6 +1,5 @@
 body {
   margin: 0px auto;
-  font-size: 100%;
   overflow-y: scroll;
 }
 
@@ -40,6 +39,7 @@ a {
   color: silver;
   font-size: 100%;
   text-decoration: none;
+  transition: transform 1s ease-out;
 }
 
 .topnav:nth-child(1):hover {
@@ -73,64 +73,60 @@ a {
 }
 
 
-section {
-  grid-column: 1/4;
+.section {
+  grid-column: 1/3;
+  grid-row: 2;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 
-.flip-card {
-  background-color: white;
-  width: 98vw;
-  height: 55vh;
-  display: flex;
-}
-
-.flip-card-front img {
-  height: 100%;
-  width: auto;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
+.banner-container {
   position: relative;
-  width: 100%;
-  height: 100%;
+}
+
+.banner-container:hover .banner, .banner-container.hover .banner {
+    transform: rotateY(180deg);
+
+	}
+
+.banner-container, .front, .back {
+	  width: 98vw;
+    height: 60vh;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.11);
+}
+
+
+.banner {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	/* position: relative; */
+
+}
+
+.front, .back {
+	backface-visibility: hidden;
+  /* display:table; */
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  padding: 0px;
+  position:absolute;
 }
 
 
-/* Style the back side */
-.flip-card-back {
-  background-color: #FFF5FF;
-  font-family: 'Playfair Display', serif;
-  color: black;
-  font-size: 120%;
-  text-align: center;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
 }
 
+.front img {
+  max-height: 100%;
+}
+
+.back {
+	transform: rotateY(180deg);
+  color: rgb (33,33,33);
+  background: #fff5f6;
+}
 
 
 footer {
@@ -200,13 +196,18 @@ color:#9435C9;
 
 
   .mobilenav {
-      display: block;
+      display: inline-block;
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%;
       text-align: center;
       background: white;
+      white-space: nowrap;
+    }
+
+    i {
+      font-size: 150%;
     }
 
     .name img {
@@ -234,8 +235,8 @@ color:#9435C9;
       width: 100%;
     }
 
-    .flip-card {
-      display: none;
+    section {
+      display:none;
     }
 
     footer {
