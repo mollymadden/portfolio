@@ -240,12 +240,9 @@ footer {
 
 
 
-  /* form { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } */
+  form { 
+    margin-bottom: 20px;
+  }
   
   
   .feedback-input {
