@@ -36,7 +36,7 @@ a {
   margin: 3%;
   font-family: 'Roboto', sans-serif;
   color: silver;
-  font-size: 13px;
+  font-size: 100%;
   text-decoration: none;
   transition: transform 1s ease-out;
 }
@@ -90,8 +90,8 @@ ul {
 
 i {
   padding: 1%;
-  font-size: 25px;
-  margin: 4%;
+  font-size: 200%;
+  margin: 2%;
 }
 
 
@@ -204,12 +204,31 @@ footer {
       left: 0;
       bottom: 0;
       width: 100%;
-      color: ff00a6;
       text-align: center;
     }
 
+    .name img {
+      max-width: 30%;
+      height: auto;
+      margin-bottom: 10%; 
+  }
+
     .nav { 
       display: none;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: none;
+    }
+
+    .flip-card-back {
+      transform: none;
+      font-size: 150%;
+    }
+
+    .flip-card-front {
+      display: none;
+      transform: none;
     }
 
     footer {
