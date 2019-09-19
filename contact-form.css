@@ -69,7 +69,7 @@ a:nth-child(5):hover {
 
 
 section {
-  grid-column: 3/4;
+  grid-column: 1/2;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -116,16 +116,14 @@ i:nth-child(4) {
 
 
 form { 
-  grid-column: 1/3;
+  grid-column: 2/4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 35%vw;
+  max-width: 50%vw;
   margin-top: 5%;
-  margin-left: 9%;
-  margin-right: 0%;
-
+  margin-right: 10%;
 }
 
 
@@ -197,21 +195,115 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-  .mobilenav {
-      display: block;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background: white;
-    }
 
-    .name img {
-      max-width: 40%;
-      height: auto;
-      margin-bottom: 10%; 
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+
+
+  .mobilenav {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+  }
+
+  .name img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 10%; 
+  }
+
+
+
+  section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+  }
+
+
+  .info {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  i {
+    font-size: 200%;
+  }
+
+
+
+  form { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .feedback-input {
+    color:silver;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: 14px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid silver;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 12px;
+    width:130%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { 
+    border:2px solid silver;
+  }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background: linen;
+    border-radius: 5px;
+    border: 1px solid silver;
+    cursor: pointer;
+    color: #ffa64c;
+    text-shadow: #0088f6;
+    font-size:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  
+  [type="submit"]:hover { 
+    background: #ff00a6;
+    color: lightpink;
+  }
+
 
     .nav { 
       display: none;
