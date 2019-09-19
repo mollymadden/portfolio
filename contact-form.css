@@ -188,8 +188,6 @@ footer {
 
 
 
-
-
 .mobilenav {
   display: none;
 }
@@ -198,9 +196,8 @@ footer {
 
   .grid-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    margin-left: 7%;
   }
 
 
@@ -223,9 +220,6 @@ footer {
 
 
   section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     font-family: 'Roboto', sans-serif;
     color: black;
   }
@@ -233,7 +227,6 @@ footer {
 
   .info {
     font-size: 12px;
-    width: 100%;
   }
 
   ul {
@@ -247,12 +240,12 @@ footer {
 
 
 
-  form { 
+  /* form { 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+  } */
   
   
   .feedback-input {
@@ -267,7 +260,6 @@ footer {
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 12px;
-    width:130%;
     box-sizing: border-box;
     outline:0;
   }
@@ -284,7 +276,6 @@ footer {
   
   [type="submit"] {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
     background: linen;
     border-radius: 5px;
     border: 1px solid silver;
