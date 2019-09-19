@@ -37,7 +37,7 @@ a {
   margin: 3%;
   font-family: 'Roboto', sans-serif;
   color: silver;
-  font-size: 150%;
+  font-size: 100%;
   text-decoration: none;
   transition: transform 1s ease-out;
 }
@@ -118,7 +118,7 @@ section {
   background-color: #FFF5FF;
   font-family: 'Playfair Display', serif;
   color: black;
-  font-size: 100%;
+  font-size: 120%;
   text-align: center;
   transform: rotateY(180deg);
   display: flex;
@@ -139,7 +139,7 @@ footer {
 
 i {
   padding: 1%;
-  font-size: 300%;
+  font-size: 200%;
   margin: 2%;
   
 }
