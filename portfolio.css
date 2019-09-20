@@ -93,18 +93,27 @@ section {
   flex-direction: column;
   max-width: 400px;
   height: 500px;
-  border: 1px solid black;
+  border: 5px solid #f5f5f5;;
 }
 
+.screenshot {
+  display: flex;
+  /* border: 1px solid silver; */
+  height: 300px;
+  align-items: center;
+}
 
 .cardimg {
   max-height: 500px;
   width: 400px;
+  max-width: 400px;
+
 }
 
 .carddescript {
-  justify-content: flex-end;
-
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
 }
 
 
@@ -197,25 +206,6 @@ color:#9435C9;
 
     .nav { 
       display: none;
-    }
-
-    .mobilepic {
-      display: flex;
-      font-family: 'Playfair Display', serif;
-      color: black;
-      font-size: 120%;
-      flex-direction: column;
-      max-width: 800px;
-      text-align: center;
-    }
-
-    .mobilepic img {
-      height: auto;
-      width: 100%;
-    }
-
-    section {
-      display:none;
     }
 
     footer {
