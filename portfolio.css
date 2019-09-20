@@ -19,6 +19,7 @@ body {
   justify-content: flex-start;
 }
 
+
 .name img {
   max-width: 30%;
   height: auto;
@@ -75,15 +76,40 @@ a {
 
 section {
   grid-column: 1/4;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid silver;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.card {
+  flex-direction: column;
+  max-width: 400px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+
+.cardimg {
+  max-height: 500px;
+  width: 400px;
+}
+
+.carddescript {
+  justify-content: flex-end;
+
 }
 
 
 footer {
-  grid-row: 4;
+  grid-row: 6;
   grid-column: 2/3;
   display: flex;
   justify-content: center;
@@ -113,7 +139,6 @@ i:nth-child(3) {
 i:nth-child(4) {
   color: #9435C9;
 }
-
 
 
 
@@ -150,19 +175,19 @@ color:#9435C9;
 
 
   .mobilenav {
-    display: inline-block;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: white;
-    white-space: nowrap;
-  }
+      display: inline-block;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: white;
+      white-space: nowrap;
+    }
 
-  i {
-    font-size: 150%;
-  }
+    i {
+      font-size: 150%;
+    }
 
     .name img {
       max-width: 40%;
@@ -174,7 +199,24 @@ color:#9435C9;
       display: none;
     }
 
+    .mobilepic {
+      display: flex;
+      font-family: 'Playfair Display', serif;
+      color: black;
+      font-size: 120%;
+      flex-direction: column;
+      max-width: 800px;
+      text-align: center;
+    }
 
+    .mobilepic img {
+      height: auto;
+      width: 100%;
+    }
+
+    section {
+      display:none;
+    }
 
     footer {
       display: none;
