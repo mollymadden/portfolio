@@ -7,7 +7,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25% 70% 5%;
+  grid-template-rows: minmax(140px, 140px) auto 5%;
 }
 
 

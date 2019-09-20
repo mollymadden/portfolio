@@ -7,7 +7,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25% 70% 5%;
+  grid-template-rows: minmax(140px, 140px) auto 5%;
 }
 
 
@@ -73,19 +73,28 @@ a {
 }
 
 
+section {
+  grid-column: 1/4;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: silver;
+  font-size: 13px;
+  line-height: 1.5;
+}
 
 
 .sides {
   grid-column: 1/2;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   color: silver;
   font-size: 80%;
-  text-align: right;
-  margin-right: 4%;
   font-family: 'Playfair Display', serif;
+  margin-left: 8%;
 }
 
 .sides p {
@@ -93,21 +102,12 @@ a {
 }
 
 
-section {
-  grid-column: 2/4;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  color: silver;
-  font-size: 13px;
-}
-
-
 .myBox {
-  width: 90%;
-  height: 70%;
+  align-self: center;
+  width: 70%;
+  height: 50%;
   overflow: scroll;
+  margin-bottom: 10%;
   }
 
 
