@@ -78,6 +78,7 @@ section {
   grid-column: 1/4;
   font-family: 'Roboto', sans-serif;
   color: black;
+  margin-bottom: 10%;
 }
 
 .cards {
