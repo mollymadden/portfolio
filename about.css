@@ -233,6 +233,11 @@ color:#9435C9;
     white-space: nowrap;
   }
 
+  .paragraph {
+      margin-bottom: 20%;
+  }
+
+
     i {
       font-size: 150%;
     }
