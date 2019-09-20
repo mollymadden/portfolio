@@ -111,6 +111,7 @@ section {
   overflow: scroll;
   margin-bottom: 10%;
   align-items: center;
+  box-shadow:inset 0px 0px 0px 10px #FAFAFA;
   }
 
 .blogimg {
