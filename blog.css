@@ -99,6 +99,7 @@ section {
 
 .sides p {
   font-size: 130%;
+  margin-top: -5px;
 }
 
 
@@ -108,10 +109,11 @@ section {
   align-self: center;
   width: 70%;
   max-height: 500px;
-  overflow: scroll;
+  overflow-y: scroll;
   margin-bottom: 10%;
   align-items: center;
-  box-shadow:inset 0px 0px 0px 10px #FAFAFA;
+  border: 10px solid white; 
+  outline: 10px solid #f5f5f5;
   }
 
 .blogimg {
@@ -126,9 +128,15 @@ section {
   
   /* Scrollbar styles */
   ::-webkit-scrollbar {
-  height: 12px;
-  }
-  
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+}
 
 
 
