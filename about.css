@@ -219,6 +219,7 @@ color:#9435C9;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    -webkit-overflow-scrolling: touch;
   }
 
     .mobilenav {

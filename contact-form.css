@@ -218,6 +218,7 @@ mycolours {
     display: flex;
     flex-direction: column;
     margin-left: 7%;
+    -webkit-overflow-scrolling: touch;
   }
 
 
