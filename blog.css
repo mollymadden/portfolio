@@ -119,6 +119,10 @@ section {
   outline: 10px solid #f5f5f5;
   }
 
+  .mybox :nth-last-child(1) {
+    margin-bottom: 10%;
+  }
+
 .blogimg {
   max-width: 60vw;
   max-height: auto;
