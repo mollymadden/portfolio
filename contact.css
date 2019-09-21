@@ -220,6 +220,15 @@ mycolours {
 }
 
 @media only screen and (max-width: 800px) {
+  a {
+    margin: 3%;
+    font-family: 'Roboto', sans-serif;
+    color: silver;
+    font-size: 100%;
+    text-decoration: none;
+  }
+
+
   .grid-container {
     display: flex;
     align-items: center;
