@@ -35,6 +35,13 @@ body {
   flex-wrap: wrap;
 }
 
+a {
+  margin: 3%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  text-decoration: none;
+}
+
 .nav a {
   margin: 3%;
   font-family: 'Roboto', sans-serif;
@@ -74,7 +81,7 @@ body {
 }
 
 
-section {
+aside {
   grid-column: 1/2;
   display: flex;
   justify-content: flex-start;
@@ -260,7 +267,7 @@ mycolours {
 
 
 
-  section {
+  aside {
     font-family: 'Roboto', sans-serif;
     color: #414a4c;
   }
