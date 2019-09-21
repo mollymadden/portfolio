@@ -25,6 +25,13 @@ body {
   height: auto;
 }
 
+a {
+  margin: 3%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  text-decoration: none;
+}
+
 .nav {
   display: flex;
   text-align: right;
