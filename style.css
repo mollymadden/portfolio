@@ -204,7 +204,7 @@ color:#9435C9;
       position: fixed;
       left: 0;
       bottom: 0;
-      width: 100%;
+      width: 100vw;
       text-align: center;
       background: white;
       white-space: nowrap;
