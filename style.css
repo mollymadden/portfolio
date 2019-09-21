@@ -217,7 +217,7 @@ color:#9435C9;
     .name img {
       max-width: 40%;
       height: auto;
-      margin-bottom: 10%; 
+      /* margin-bottom: 10%;  */
   }
 
     .nav { 
