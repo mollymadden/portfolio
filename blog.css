@@ -92,7 +92,7 @@ section {
   align-items: flex-start;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  color: silver;
+  color:  #414a4c;;
   font-size: 100%;
   font-family: 'Playfair Display', serif;
   margin-left: 8%;
@@ -105,7 +105,7 @@ section {
 
 
 .myBox {
-  display: flex;
+  display: clear;
   flex-wrap: wrap;
   align-self: center;
   width: 70%;
@@ -120,16 +120,18 @@ section {
   }
 
   .mybox :nth-last-child(1) {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
   }
 
 .blogimg {
-  max-width: 60vw;
+  max-width: 40vw;
   max-height: auto;
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
-  margin-bottom: 15px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  float: left;
 }
 
   
@@ -236,44 +238,66 @@ color:#9435C9;
 
 
     section {
+      grid-column: 1/4;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       font-family: 'Roboto', sans-serif;
-      color: silver;
+      color: #414a4c;
       font-size: 13px;
       line-height: 1.5;
     }
     
     
     .sides {
+      grid-column: 1/2;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       font-family: 'Roboto', sans-serif;
-      color: silver;
-      font-size: 80%;
+      color:  #414a4c;;
+      font-size: 100%;
       font-family: 'Playfair Display', serif;
       margin-left: 8%;
     }
     
     .sides p {
-      font-size: 130%;
+      font-size: 150%;
+      margin-top: -5px;
     }
     
     
     .myBox {
+      display: clear;
+      flex-wrap: wrap;
       align-self: center;
       width: 70%;
-      height: 50%;
+      max-height: 90vh;
       overflow-y: scroll;
       overflow-x: hidden;
       margin-bottom: 10%;
+      align-items: center;
+      justify-content: center;
       border: 10px solid white; 
       outline: 10px solid #f5f5f5;
       }
     
+      .mybox :nth-last-child(1) {
+      margin-bottom: 10%;
+      }
+    
+    .blogimg {
+      max-width: 40vw;
+      max-height: auto;
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: 0 0 5px #888;
+      margin-right: 100%;
+      margin-bottom: 2%;
+    }
+    
       
+      /* Scrollbar styles */
       ::-webkit-scrollbar {
         -webkit-appearance: none;
         width: 7px;
