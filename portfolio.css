@@ -79,7 +79,7 @@ section {
   margin-top: 1%;
   grid-column: 1/4;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: #414a4c;
 }
 
 .cards {
@@ -199,7 +199,7 @@ color:#9435C9;
   section {
     grid-column: 1/4;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: #414a4c;
     margin-bottom: 25%;
   }
 

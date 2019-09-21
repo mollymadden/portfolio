@@ -80,7 +80,7 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: #414a4c;
 }
 
 
@@ -262,7 +262,7 @@ mycolours {
 
   section {
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: #414a4c;
   }
 
 
