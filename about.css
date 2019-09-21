@@ -137,6 +137,7 @@ a {
   color: grey;
   font-size: 13px;
   max-width: 80%;
+  max-height: 50%;
   flex-wrap: wrap;
 }
 
