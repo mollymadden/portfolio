@@ -87,11 +87,12 @@ section {
 .info {
   font-size: 12px;
   width: 80%;
-  margin: 2px
+  margin: 2px;
 }
 
 ul {
   list-style-type: none;
+  margin-top: 10%;
 }
 
 i {
@@ -181,17 +182,6 @@ textarea {
   color: lightpink;
 }
 
-
-footer {
-  grid-row: 4;
-  grid-column: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin: 6%;
-}
-
-
 mycolours {
   color:#ff00a6;
   color:#ff3f7f;
@@ -256,6 +246,7 @@ mycolours {
   ul {
     list-style-type: none;
     padding: 0px;
+    margin-top: 0%;
   }
 
 

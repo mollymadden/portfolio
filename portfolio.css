@@ -2,12 +2,14 @@ body {
   margin: 0px auto;
   font-size: 100%;
   overflow-y: scroll;
+  position: relative;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: minmax(140px, 140px) auto 5%;
+  min-height: 100vh;
 }
 
 
@@ -78,49 +80,55 @@ section {
   grid-column: 1/4;
   font-family: 'Roboto', sans-serif;
   color: black;
-  margin-bottom: 10%;
+  margin-top: 2%;
+  border: 5px dashed orange;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  border: 5px dotted black;
 }
 
 .card {
-  flex-direction: column;
-  max-width: 400px;
-  height: 500px;
+  width: 30%;
+  height: 50vh;
+  /* max-height: 40%; */
   border: 5px solid #f5f5f5;
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
-  margin-bottom: 5%;
+  border: 1px solid black;
 }
 
 .screenshot {
   display: flex;
-  height: 300px;
+  min-height: 70%;
   align-items: center;
+  justify-content: center;
+  margin: 2%;
+  border: 1px solid red;
 }
 
 .cardimg {
-  max-height: 500px;
-  width: 100%;
-  max-width: 400px;
+  /* max-height:170%; */
+  max-width: 100%;
+  border: 3px solid green;
 }
 
 .carddescript {
-  margin-left: 20px;
+  margin-left: 4%;
   color: #414a4c;
-  line-height: 2;
+  line-height: 1.1;
+  border: 3px solid purple;
+  font-size: 90%;
+  max-height: 25%;
 }
 
 
+
 footer {
-  grid-row: 6;
   grid-column: 2/3;
   display: flex;
   justify-content: center;
@@ -129,9 +137,8 @@ footer {
 }
 
 i {
-  padding: 1%;
   font-size: 200%;
-  margin: 2%;
+  padding:1%;
 }
 
 i:nth-child(1) {
@@ -182,6 +189,46 @@ color:#9435C9;
     align-items: center;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 60vw;
+    margin-bottom: 5%;
+    height: 50vh;
+    /* max-height: 40%; */
+    border: 5px solid #f5f5f5;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    border: 1px solid black;
+  }
+
+  .screenshot {
+    display: flex;
+    min-height: 50%;
+    /* align-items: center; */
+    border: 1px solid red;
+  }
+  
+  .cardimg {
+    min-height: 80%;
+    /* width: 100%; */
+    border: 3px solid green;
+  }
+  
+  .carddescript {
+    margin-left: 4%;
+    color: #414a4c;
+    line-height: 1.1;
+    border: 3px solid purple;
   }
 
 
