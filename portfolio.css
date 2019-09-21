@@ -194,7 +194,7 @@ color:#9435C9;
 
   .card {
     width: 70vw;
-    margin-bottom: 15%;
+    margin-bottom: 25%;
     height: 70vh;
     border: 5px solid #f5f5f5;
     -moz-box-shadow: 0 0 5px #888;
@@ -238,7 +238,7 @@ color:#9435C9;
     .name img {
       max-width: 40%;
       height: auto;
-      margin-bottom: 10%; 
+      /* margin-bottom: 10%;  */
   }
 
     .nav { 

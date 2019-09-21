@@ -202,14 +202,12 @@ mycolours {
 }
 
 @media only screen and (max-width: 800px) {
-
   .grid-container {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    margin-left: 7%;
     -webkit-overflow-scrolling: touch;
   }
-
 
   .mobilenav {
     display: inline-block;
@@ -236,6 +234,7 @@ mycolours {
   section {
     font-family: 'Roboto', sans-serif;
     color: black;
+    margin-left: 10%;
   }
 
 
@@ -253,6 +252,7 @@ mycolours {
 
   form { 
     margin-bottom: 50px;
+    margin-left: 10%;
   }
   
   

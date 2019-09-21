@@ -229,7 +229,7 @@ color:#9435C9;
     .name img {
       max-width: 40%;
       height: auto;
-      margin-bottom: 10%; 
+      /* margin-bottom: 10%;  */
   }
 
     .nav { 
@@ -259,11 +259,11 @@ color:#9435C9;
       font-size: 100%;
       font-family: 'Playfair Display', serif;
       margin-left: 8%;
+
     }
     
     .sides p {
       font-size: 150%;
-      margin-top: -5px;
     }
     
     

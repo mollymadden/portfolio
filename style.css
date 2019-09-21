@@ -192,7 +192,7 @@ color:#9435C9;
 @media only screen and (max-width: 800px) {
   .grid-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
@@ -216,7 +216,7 @@ color:#9435C9;
 
     .name img {
       max-width: 40%;
-      height: auto;
+      /* height: auto; */
       /* margin-bottom: 10%;  */
   }
 
