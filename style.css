@@ -75,7 +75,7 @@ a {
 
 
 
-section {
+main {
   grid-column: 1/4;
   display: flex;
   justify-content: center;
@@ -256,7 +256,7 @@ color:#9435C9;
       width: 100%;
     }
 
-    section {
+    main {
       display:none;
     }
 
