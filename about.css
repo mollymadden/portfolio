@@ -56,8 +56,8 @@ a {
 }
 
 .topnav:nth-child(3):hover {
-  border-top: 2px solid #80a961;
-  border-bottom: 2px solid #80a961;
+  border-top: 2px solid #00d164;
+  border-bottom: 2px solid #00d164;
   padding: 6px 0;
 }
 
@@ -213,7 +213,7 @@ color:#ff3f7f;
 color:#ff755f;
 color:#ffa64c;
 color:#ffd150;
-color:#80a961;
+color:#00d164;
 color:#008172;
 color:#0088f6;
 color:#0079ff;
