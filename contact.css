@@ -182,6 +182,18 @@ textarea {
   color: lightpink;
 }
 
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+}
+
 mycolours {
   color:#ff00a6;
   color:#ff3f7f;
@@ -204,12 +216,14 @@ mycolours {
 @media only screen and (max-width: 800px) {
   .grid-container {
     display: flex;
+    align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
   }
 
-  .mobilenav {
+    .mobilenav {
     display: inline-block;
     position: fixed;
     left: 0;
@@ -234,25 +248,27 @@ mycolours {
   section {
     font-family: 'Roboto', sans-serif;
     color: black;
-    margin-left: 10%;
   }
 
 
   .info {
     font-size: 12px;
+
   }
 
   ul {
     list-style-type: none;
     padding: 0px;
     margin-top: 0%;
+    min-width: 72vw;
   }
 
 
 
   form { 
     margin-bottom: 50px;
-    margin-left: 10%;
+    min-width: 70vw;
+    margin-left: 8%;
   }
   
   

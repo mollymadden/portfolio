@@ -9,7 +9,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: minmax(140px, 140px) auto 5% [last];
   min-height: 100vh;
-  max-height: 100vh;
 }
 
 
@@ -90,9 +89,9 @@ a {
 }
 
 .disc-container:hover .disc, .disc-container.hover .disc {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 
-}
+	}
 
 .disc-container, .front, .back {
   width: 300px;
@@ -138,7 +137,7 @@ a {
   color: grey;
   font-size: 13px;
   max-width: 80%;
-  max-height: 40%;
+  max-height: 50%;
   flex-wrap: wrap;
 }
 
@@ -160,6 +159,18 @@ a {
   width: auto;
   height: 40px;
   margin: 20px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
 }
 
 

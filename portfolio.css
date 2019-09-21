@@ -76,6 +76,7 @@ a {
 
 
 section {
+  margin-top: 1%;
   grid-column: 1/4;
   font-family: 'Roboto', sans-serif;
   color: black;
@@ -86,7 +87,6 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
 }
 
 .card {
@@ -117,6 +117,18 @@ section {
   margin-left: 20px;
   color: #414a4c;
   line-height: 1.5;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
 }
 
 
@@ -182,6 +194,13 @@ color:#9435C9;
     align-items: center;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
+  }
+
+  section {
+    grid-column: 1/4;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-bottom: 25%;
   }
 
 
