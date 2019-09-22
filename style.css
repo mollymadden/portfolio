@@ -125,7 +125,7 @@ main {
   background-color: #FFF5FF;
   font-family: 'Playfair Display', serif;
   color: black;
-  font-size: 100%;
+  font-size: 130%;
   text-align: center;
   transform: rotateY(180deg);
   display: flex;
@@ -244,10 +244,12 @@ color:#9435C9;
       flex-direction: column;
       max-width: 800px;
       text-align: center;
+      margin-top: 5%;
     }
 
     .mobilepic .paragraph {
       margin: 5%;
+      margin-top: 10%;
     }
 
 
