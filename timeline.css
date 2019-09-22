@@ -69,15 +69,10 @@
 .entry h1 {
   color:#414a4c;
   font-size:18px;
-  font-weight:bold;
+  font-family: 'Playfair Display', serif;
   margin-bottom:10px;
 }
 
-.entry h2 {
-  letter-spacing:.2em;
-  margin-bottom:10px;
-  font-size:14px;
-}
 
 .bar {
   height:4px;
