@@ -249,11 +249,6 @@ color:#9435C9;
     white-space: nowrap;
   }
 
-  .paragraph {
-      margin-bottom: 20%;
-  }
-
-
     i {
       font-size: 150%;
     }
@@ -269,6 +264,8 @@ color:#9435C9;
 
     .mobsnip {
       display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
       font-family: 'Roboto', sans-serif;
       color: #414a4c;
       font-size: 13px;
