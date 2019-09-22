@@ -159,6 +159,10 @@ section {
   text-decoration: none;
 }
 
+.bloglinks a:nth-child(1) {
+  margin-top: 5px;
+}
+
   
   /* Scrollbar styles */
   ::-webkit-scrollbar {
