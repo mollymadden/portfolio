@@ -144,6 +144,10 @@ footer {
   margin: 6%;
 }
 
+footer a {
+  margin: 1%;
+}
+
 i {
   padding: 1%;
   font-size: 200%;
