@@ -1,4 +1,4 @@
-body {
+  body {
     margin: 0px auto;
     font-size: 100%;
     overflow-y: scroll;
@@ -35,10 +35,6 @@ body {
     flex-wrap: wrap;
   }
 
-  h1 {
-    display: none;
-  }
-  
   a {
     margin: 3%;
     font-family: 'Roboto', sans-serif;
@@ -85,7 +81,7 @@ body {
     border: 5px solid transparent;
     border-image: linear-gradient(to top left, #b353e8 0%, #0079ff 25%, #00d164 50%, #ffa64c 75%, #ff00a6 100%);
     border-image-slice: 1;
-    margin-top: 20%;
+    margin-top: 2%;
     min-width: 45%;
     justify-self: center;
   }
@@ -209,15 +205,16 @@ body {
   
   
     section {
-        grid-column: 1/4;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        font-family: 'Roboto', sans-serif;
-        color: #414a4c;
-        font-size: 13px;
-        line-height: 1.5;
-      }
+      display: flex;
+      grid-column: 1 / 4;
+      padding: 5%;
+      border: 5px solid transparent;
+      border-image: linear-gradient(to top left, #b353e8 0%, #0079ff 25%, #00d164 50%, #ffa64c 75%, #ff00a6 100%);
+      border-image-slice: 1;
+      margin-top: 2%;
+      min-width: 45%;
+      justify-self: center;
+    }
       
   
     /* Scrollbar styles */
